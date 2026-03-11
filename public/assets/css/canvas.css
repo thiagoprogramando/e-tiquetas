@@ -1,0 +1,75 @@
+* {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+#label-canvas-wrapper {
+    background: #f4f5f7;
+    padding: 40px;
+    width: 100%;
+    overflow: auto;
+}
+
+#label-canvas {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(#eee 1px, transparent 1px),
+        linear-gradient(90deg, #eee 1px, transparent 1px);
+
+    background-size: 3.78px 3.78px; /* 1mm */
+    font-size: 25px !important;
+}
+.label-element {
+    position: absolute;
+    cursor: pointer;
+    border: 1px dashed transparent;
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.1;
+}
+
+.label-element.selected {
+    border: 1px dashed #696cff;
+}
+
+.resize-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -5px;
+    bottom: -5px;
+    background: #696cff;
+    cursor: se-resize;
+    display: none;
+}
+
+.label-element.selected .resize-handle {
+    display: block;
+}
+
+.barcode-placeholder {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    font-size:10px;
+    text-align:center;
+}
+
+.barcode-lines {
+    width:100%;
+    height:60%;
+    background: repeating-linear-gradient(
+        90deg,
+        #000,
+        #000 2px,
+        #fff 2px,
+        #fff 4px
+    );
+}
