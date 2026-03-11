@@ -29,7 +29,7 @@
                                 <input type="text" class="form-control" id="email" name="email" placeholder="Qual o seu E-mail de acesso?" required/>
                                 <label for="email">Qual o seu E-mail de acesso?</label>
                             </div>
-                            <button class="btn btn-primary d-grid w-100">Cadastrar-me</button>
+                            <button class="btn btn-warning d-grid w-100">RECUPERAR ACESSO</button>
                         </form>
                     @else
                         <form class="mb-5" action="{{ route('forgout-password') }}" method="POST">
@@ -42,14 +42,14 @@
                                 <input type="text" class="form-control" id="password_confirmed" name="password_confirmed" placeholder="Confirme sua nova senha:" required/>
                                 <label for="password_confirmed">Confirme sua nova senha:</label>
                             </div>
-                            <button class="btn btn-primary d-grid w-100">Cadastrar-me</button>
+                            <button class="btn btn-warning d-grid w-100">ATUALIZAR</button>
                         </form>
                     @endif
 
                     <p class="text-center">
                         <span>Já tem uma Conta?</span>
                         <a href="{{ route('login') }}">
-                            <span>Acesse agora!</span>
+                            <span class="text-warning">Acesse agora!</span>
                         </a>
                     </p>
                 </div>

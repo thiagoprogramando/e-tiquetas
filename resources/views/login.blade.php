@@ -41,17 +41,17 @@
                         </div>
                         <div class="mb-5 d-flex justify-content-between mt-5">
                             <div class="form-check mt-2"></div>
-                            <a href="{{ route('forgout') }}" class="float-end mb-1 mt-2">
+                            <a href="{{ route('forgout') }}" class="float-end text-warning mb-1 mt-2">
                                 <span>Esqueceu sua senha?</span>
                             </a>
                         </div>
-                        <button class="btn btn-primary d-grid w-100">Acessar</button>
+                        <button class="btn btn-warning d-grid w-100">ACESSAR</button>
                     </form>
 
                     <p class="text-center">
                         <span>Não tem uma Conta?</span>
                         <a href="{{ route('register') }}">
-                            <span>Cadastre-se agora!</span>
+                            <span class="text-warning">Cadastre-se agora!</span>
                         </a>
                     </p>
                 </div>

@@ -48,13 +48,13 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary d-grid w-100">Cadastrar-me</button>
+                        <button class="btn btn-warning d-grid w-100">CADASTRAR-ME</button>
                     </form>
 
                     <p class="text-center">
                         <span>Já tem uma Conta?</span>
                         <a href="{{ route('login') }}">
-                            <span>Acesse agora!</span>
+                            <span class="text-warning">Acesse agora!</span>
                         </a>
                     </p>
                 </div>
