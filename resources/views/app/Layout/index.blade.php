@@ -226,20 +226,20 @@
                           <li class="list-group-item d-flex align-items-center">
                             <i class="ri-file-line ri-22px me-3"></i> {{ $layout->labelFormat() }} {{ $layout->paper_width_mm.' × '.$layout->paper_height_mm.'mm' }}
                           </li>
-                          <li class="list-group-item d-flex align-items-center">
-                            <i class="ri-arrow-up-double-line ri-22px me-3"></i> {{ $layout->margin_top_mm }}
+                          <li class="list-group-item d-flex">
+                            <i class="ri-arrow-up-double-line ri-22px me-3"></i> Margem Superior: {{ $layout->margin_top_mm }}
                           </li>
                           <li class="list-group-item d-flex align-items-center">
-                            <i class="ri-arrow-left-double-line ri-22px me-3"></i> {{ $layout->margin_left_mm }}
+                            <i class="ri-arrow-left-double-line ri-22px me-3"></i> Margem Esquerda: {{ $layout->margin_left_mm }}
                           </li>
                           <li class="list-group-item d-flex align-items-center">
-                            <i class="ri-table-2 ri-22px me-3"></i> {{ $layout->columns.' × '.$layout->rows }}
+                            <i class="ri-table-2 ri-22px me-3"></i> Colunas X Linhas: {{ $layout->columns.' × '.$layout->rows }}
                           </li>
                           <li class="list-group-item d-flex align-items-center">
-                            <i class="ri-expand-height-fill ri-22px me-3"></i> {{ $layout->gap_x_mm }}
+                            <i class="ri-expand-height-fill ri-22px me-3"></i> Espaçamento Vertical: {{ $layout->gap_x_mm }}
                           </li>
                           <li class="list-group-item d-flex align-items-center">
-                            <i class="ri-expand-width-fill ri-22px me-3"></i> {{ $layout->gap_y_mm }}
+                            <i class="ri-expand-width-fill ri-22px me-3"></i> Espaçamento Horizontal: {{ $layout->gap_y_mm }}
                           </li>
                         </ul>
                       </div>
